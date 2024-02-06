@@ -2,14 +2,8 @@ import React from "react";
 import { CDN_URL } from "@/utils/constants";
 
 function Card({ resData }) {
-  // if (!resData || !resData.restaurants) {
-  //   return null; // Handle the case when data is not available
-  // }
-
   const { id, name, cloudinaryImageId, cuisines, avgRating, costForTwo, sla } =
-    resData;
-
-  console.log(resData);
+    resData.info;
 
   return (
     <div
