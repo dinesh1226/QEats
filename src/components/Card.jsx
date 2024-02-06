@@ -7,7 +7,7 @@ function Card({ resData }) {
 
   return (
     <div
-      className={`w-56 mb-4 h-68 hover:scale-[0.95] hover:transition cursor-pointer bg-white rounded-lg`}
+      className={`w-60 mb-4 hover:scale-[0.95] hover:transition cursor-pointer bg-white rounded-lg border-2 border-t-0`}
     >
       <div key={id} className="mb-4">
         <img
