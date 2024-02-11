@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import Card from "./Card";
 import { API_URL } from "@/utils/constants";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 function Body() {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -71,7 +72,9 @@ function Body() {
       </div>
       <div className="mt-12 gap-9 flex flex-wrap justify-center">
         {filteredRestaurants.map((res) => (
-          <Card key={res.info.id} resData={res} />
+          <Link key={res.info.id} to={"/restaurants/" + res.info.id}>
+            <Card resData={res} />{" "}
+          </Link>
         ))}
       </div>
     </div>

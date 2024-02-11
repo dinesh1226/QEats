@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [btnName, setBtnName] = useState("Login");
@@ -8,10 +9,19 @@ function Header() {
       <img src="src\assets\swiggy-logo-1.svg" alt="" />
       <div>
         <ul className="flex gap-10 text-md items-center">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Cart</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/cart">Cart</Link>
+          </li>
+
           <Button
             onClick={() => {
               btnName === "Login" ? setBtnName("Logout") : setBtnName("Login");
