@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "@/utils/useOnlineStatus";
 
 function Header() {
   const [btnName, setBtnName] = useState("Login");
+  const onlineStatus = useOnlineStatus();
   return (
     <div className="flex justify-between items-center px-28 py-3  border-2">
       <img src="src\assets\swiggy-logo-1.svg" alt="" />
       <div>
         <ul className="flex gap-10 text-md items-center">
+          <li>
+            <Link to="/">Online Status : {onlineStatus ? "🟢" : "🔴"}</Link>
+          </li>
           <li>
             <Link to="/">Home</Link>
           </li>
