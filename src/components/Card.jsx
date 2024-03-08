@@ -7,7 +7,7 @@ function Card({ resData }) {
 
   return (
     <div
-      className={`w-60 mb-4 hover:scale-[0.95] hover:transition cursor-pointer bg-white rounded-lg border-2 border-t-0`}
+      className={`w-60 mb-4 h-[330px] hover:scale-[0.95] hover:transition cursor-pointer bg-white rounded-lg border-2 border-t-0`}
     >
       <div key={id} className="mb-4">
         <img
@@ -15,6 +15,7 @@ function Card({ resData }) {
           src={CDN_URL + cloudinaryImageId}
           alt={`Image for ${name}`}
         />
+        
         <div className="pt-3 pl-4 pr-2">
           <p className="font-semibold">{name}</p>
           <p className="text-sm">{cuisines.join(", ")}</p>

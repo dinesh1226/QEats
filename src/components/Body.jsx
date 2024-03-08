@@ -51,7 +51,7 @@ function Body() {
           }}
         />
         <Button
-          className="py-0.5 text-md"
+          className="py-1.5 text-md"
           onClick={() => {
             const filteredRestaurants = listOfRestaurants.filter((res) =>
               res.info.name.toLowerCase().includes(searchText.toLowerCase())

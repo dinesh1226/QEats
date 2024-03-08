@@ -2,17 +2,18 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "@/utils/useOnlineStatus";
+import Swiggy from "@/assets/Swiggy";
 
 function Header() {
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
   return (
-    <div className="flex justify-between items-center px-28 py-3  border-2">
-      <img src="src\assets\swiggy-logo-1.svg" alt="" />
+    <div className="flex justify-between items-center px-28 py-3 border-2">
+      <Swiggy />
       <div>
-        <ul className="flex gap-10 text-md items-center">
+        <ul className="sm:flex gap-10 text-md items-center hidden ">
           <li>
-            <Link to="/">Online Status : {onlineStatus ? "🟢" : "🔴"}</Link>
+            {/* <Link to="/">Online Status : {onlineStatus ? "🟢" : "🔴"}</Link> */}
           </li>
           <li>
             <Link to="/">Home</Link>
