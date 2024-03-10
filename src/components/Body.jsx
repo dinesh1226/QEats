@@ -18,7 +18,7 @@ function Body() {
   const fetchData = async () => {
     const data = await fetch(API_URL);
     const json = await data.json();
-    console.log(json);
+    // console.log(json);
     setListOfRestaurants(
       json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
     );
@@ -37,7 +37,9 @@ function Body() {
   if (onlineStatus === false) return <h1>Offline</h1>;
 
   return listOfRestaurants.length === 0 ? (
-    <Shimmer />
+    <div className="mt-[120px] gap-9 flex flex-wrap justify-center">
+      <Shimmer />
+    </div>
   ) : (
     <div className="pt-12 mx-16">
       <div>

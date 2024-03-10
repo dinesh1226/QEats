@@ -1,18 +1,81 @@
 import React from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function Shimmer() {
   return (
-    <div className="px-16 justify-center mt-24 flex flex-wrap gap-9">
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-      <div className="w-60 h-72 rounded-lg bg-[#f0f0f0]"></div>
-    </div>
+    <>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+      <div className="flex flex-col space-y-3">
+        <Skeleton className="h-[155px] w-[250px] rounded-xl" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[250px]" />
+          <Skeleton className="h-4 w-[200px]" />
+        </div>
+      </div>
+    </>
   );
 }
 
