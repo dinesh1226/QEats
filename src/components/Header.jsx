@@ -9,7 +9,9 @@ function Header() {
   const onlineStatus = useOnlineStatus();
   return (
     <div className="flex justify-between items-center px-28 py-3 border-2">
-      <Swiggy />
+      <Link to="/">
+        <Swiggy />
+      </Link>
       <div>
         <ul className="sm:flex gap-10 text-md items-center hidden ">
           <li>
